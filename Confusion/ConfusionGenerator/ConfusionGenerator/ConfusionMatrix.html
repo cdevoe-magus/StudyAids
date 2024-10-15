@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Confusion Matrix Generator</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>Confusion Matrix Generator</header>
+    <table>
+        <tr>
+            <td>Matrix</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Positive</td>
+            <td>Negative</td>
+        </tr>
+        <tr>
+            <td>Positive</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Negative</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </table>
+   <table>
+       <tr hidden="true">
+           <td>Accuracy</td> <td></td>
+       </tr>
+       <tr hidden="true">
+           <td>Precision</td> <td></td>
+       </tr>
+       <tr hidden="true">
+           <td>Recall</td> <td></td>
+       </tr>
+       <tr hidden="true">
+           <td>F1 Score</td> <td></td>
+       </tr>
+   </table>
+    <button type="button" onclick="generate(this)">Generate</button>
+    <button type="button" onclick="reveal(this)">Reveal</button>
+</body>
+</html>
